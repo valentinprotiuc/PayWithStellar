@@ -167,7 +167,7 @@ var PayWithStellar = (function(){
 
     function checkPayments(refid, total) {
         var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
-        if(state.net=='live') {
+        if(state.options.horizon ==='live') {
             server = new StellarSdk.Server('https://horizon.stellar.org');
         }
 
